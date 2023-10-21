@@ -11,22 +11,14 @@ const resolvers = {
     blog: (_, args) => db.blogs.find((blog) => blog.id === args.id),
   },
   User: {
-    blogs(parent) {
-      return db.blogs.filter((r) => r.author_id === parent.id);
-    },
+    blogs: (parent) => db.blogs.filter((r) => r.author_id === parent.id),
   },
   Blog: {
-    user(parent) {
-      return db.users.find((r) => r.id === parent.author_id);
-    },
+    user: (parent) => db.users.find((r) => r.id === parent.author_id),
   },
   Mutation: {
-    deleteBlog(_, args) {
-      return db.blogs.filter((r) => r.id !== args.id);
-    },
-    deleteUser(_, args) {
-      return db.users.filter((r) => r.id !== args.id);
-    },
+    deleteBlog: (_, args) => db.blogs.filter((r) => r.id !== args.id),
+    deleteUser: (_, args) => db.users.filter((r) => r.id !== args.id),
   },
 };
 
