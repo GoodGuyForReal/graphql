@@ -7,6 +7,18 @@ const resolvers = {
   Query: {
     users: () => db.users,
     blogs: () => db.blogs,
+    user: (_, args) => db.users.find((user) => user.id === args.id),
+    blog: (_, args) => db.blogs.find((blog) => blog.id === args.id),
+  },
+  User: {
+    blogs(parent) {
+      return db.blogs.filter((r) => r.author_id === parent.id);
+    },
+  },
+  Blog: {
+    user(parent) {
+      return db.users.find((r) => r.id === parent.author_id);
+    },
   },
 };
 

@@ -7,6 +7,7 @@ export const typeDefs = `#graphql
     desc: String
     category: String
     author_id: String
+    user: User!
    }
 
 type User {
@@ -17,10 +18,13 @@ type User {
     avatar: String
     timestamp: String
     banner: String
+    blogs: [Blog!]
 }
 
   type Query {
     blogs: [Blog]
+    blog( id: ID! ): Blog
     users: [User]
+    user( id: ID! ): User
   }
-`
+`;
