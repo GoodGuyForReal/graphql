@@ -27,4 +27,11 @@ type User {
     users: [User]
     user( id: ID! ): User
   }
+
+
+type Mutation {
+  deleteBlog( id: ID! ): [Blog] 
+  deleteUser( id: ID! ): [User] 
+}
+
 `;

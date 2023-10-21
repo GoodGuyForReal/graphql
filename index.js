@@ -20,6 +20,14 @@ const resolvers = {
       return db.users.find((r) => r.id === parent.author_id);
     },
   },
+  Mutation: {
+    deleteBlog(_, args) {
+      return db.blogs.filter((r) => r.id !== args.id);
+    },
+    deleteUser(_, args) {
+      return db.users.filter((r) => r.id !== args.id);
+    },
+  },
 };
 
 const server = new ApolloServer({
