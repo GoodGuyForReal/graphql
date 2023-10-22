@@ -1,4 +1,7 @@
 import db from "./db.js";
+import timestamp from "time-stamp";
+import { v4 as uuid4 } from "uuid";
+
 export const resolvers = {
   Query: {
     users: () => db.users,
@@ -26,6 +29,16 @@ export const resolvers = {
       const deletedUserBlogs = db.blogs.filter((r) => r.author_id !== args.id);
       console.log("deletedUserBlogs", deletedUserBlogs);
       return deletedUser;
+    },
+    addBlog: (_, args) => {
+      let blog = {
+        ...args.blog,
+        id: uuid4(),
+        timestamp: timestamp("YYYYMMDD"),
+      };
+
+      db.blogs.push(blog);
+      return blog;
     },
   },
 };

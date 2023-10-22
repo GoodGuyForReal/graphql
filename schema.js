@@ -29,9 +29,16 @@ type User {
   }
 
 
-type Mutation {
-  deleteBlog( id: ID! ): [Blog] 
-  deleteUser( id: ID! ): [User] 
-}
-
+ type Mutation {
+   deleteBlog( id: ID! ): [Blog] 
+   deleteUser( id: ID! ): [User] 
+   addBlog(blog: AddBlogInput!): Blog
+ }
+ 
+ input AddBlogInput {
+     title: String!
+     desc: String
+     category: String!
+     author_id: String!
+ }
 `;
