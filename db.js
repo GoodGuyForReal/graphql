@@ -698,7 +698,7 @@ const users = [
     id: "d4044f99-5890-4d81-b74b-8ab4f05e3c57",
     email: "dante@example.com",
     user_name: "Dante",
-    bio: "new updatetest bio",
+    bio: "new update test bio",
     avatar: "",
     timestamp: "2023-08-18",
     banner:
