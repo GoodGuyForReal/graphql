@@ -33,6 +33,7 @@ type User {
    deleteBlog( id: ID! ): [Blog] 
    deleteUser( id: ID! ): [User] 
    addBlog(blog: AddBlogInput!): Blog
+   addUser(user: AddUserInput!): User
  }
  
  input AddBlogInput {
@@ -40,5 +41,13 @@ type User {
      desc: String
      category: String!
      author_id: String!
+ }
+
+ input AddUserInput {
+    email: String!
+    user_name: String!
+    bio: String
+    avatar: String
+    banner: String
  }
 `;
