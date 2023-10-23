@@ -5,12 +5,14 @@
 //     }
 //    }
 
+
 //    query GetAllUsersQuery {
 //     users {
 //       id
 //       user_name
 //     }
 //     }
+
 
 //     query UserQuery($userId: ID!) {
 //         user(id: $userId) {
@@ -23,6 +25,7 @@
 //         }
 //       }
 
+
 //       mutation DeleteBlog ($id:ID!) {
 //         deleteBlog(id: $id) {
 //           id
@@ -30,12 +33,14 @@
 //         }
 //       }
 
+
 //       mutation DeleteUser ($id:ID!) {
 //         deleteUser(id: $id) {
 //           id
 //           user_name
 //         }
 //       }
+
 
 // mutation AddBlog($blog: AddBlogInput!) {
 //     addBlog(blog: $blog) {
@@ -58,3 +63,25 @@
 //       "author_id": "9c506193-f14b-469f-87fd-44267aa5a4d0",
 //     }
 //   }
+
+
+// mutation AddUser($user: AddUserInput!) {
+//     addUser(user: $user) {
+//       id
+//       email
+//       user_name
+//       bio
+//       timestamp
+//       banner
+//       avatar
+//     }
+//        }
+//        {
+//         "user": {
+//           "email": "carter@gmail.com",
+//           "user_name": "Carter",
+//           "bio": "LAPD rush hour officer",
+//           "avatar": null,
+//           "banner": null,
+//         }
+//       }

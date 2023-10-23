@@ -689,15 +689,15 @@ const blogs = [
       id: "32083cad-8506-4b93-97bd-2719c77497e3",
       email: "user20@example.com",
       user_name: "HistoryBuff",
-      bio: "Hello, I'm [Your Name], a passionate [Your Profession] with a deep love for [Your Interests/Hobbies]. I believe in the power of [Your Belief or Philosophy] and strive to [Your Goal or Mission]. In my free time, you can often find me [Your Favorite Activities], exploring [Your Favorite Places], or simply enjoying a good book. Let's connect and share our experiences and ideas!",
+      bio: "Hello, I'm HistoryBuff, let's connect and share our experiences and ideas!",
       avatar: "",
       timestamp: "2023-08-14",
       banner: "",
     },
     {
       id: "d4044f99-5890-4d81-b74b-8ab4f05e3c57",
-      email: "taric@gmail.com",
-      user_name: "Taric",
+      email: "dante@example.com",
+      user_name: "Dante",
       bio: "new updatetest bio",
       avatar:
         "https://nbuiqkkhjnhefvqmnprr.supabase.co/storage/v1/object/public/avatars/d4044f99-5890-4d81-b74b-8ab4f05e3c57/avatar/2d313563-140b-4c34-8159-db28cccec5a6",
@@ -707,7 +707,7 @@ const blogs = [
     },
     {
       id: "c7859b86-ac22-43a5-9a11-629a32cc7d5a",
-      email: "james@gmail.com",
+      email: "tarik@example.com",
       user_name: "Tarik",
       bio: "Frontend Developer | Next JS | JavaScript | Typescript | Zod | MVC | Tailwind CSS | Bootstrap | Figma | UI UX | Git | ** Looking new job opportunities **",
       avatar:
@@ -718,9 +718,9 @@ const blogs = [
     },
     {
       id: "d74d6340-eb84-4bb6-a662-25a441ec86be",
-      email: "dude@gmail.com",
-      user_name: "dude",
-      bio: "Bruuh I am the dude",
+      email: "james@example.com",
+      user_name: "James",
+      bio: "enjoying the life",
       avatar:
         "https://nbuiqkkhjnhefvqmnprr.supabase.co/storage/v1/object/public/avatars/d74d6340-eb84-4bb6-a662-25a441ec86be/avatar/f3421a70-085e-48e0-a8d2-500261d81827",
       timestamp: "2023-10-09",
