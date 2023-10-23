@@ -5,6 +5,7 @@ import { addBlog } from "./actions/mutations/add-blog.js";
 import { user } from "./actions/Query/user.js";
 import { blog } from "./actions/Query/blog.js";
 import { addUser } from "./actions/mutations/add-user.js";
+import { updateBlog } from "./actions/mutations/update-blog.js";
 
 export const resolvers = {
   Query: {
@@ -23,6 +24,7 @@ export const resolvers = {
     deleteBlog: (_, args) => deleteBlog(args),
     deleteUser: (_, args) => deletedUser(args),
     addBlog: (_, args) => addBlog(args),
-    addUser: (_, args) => addUser(args)
+    updateBlog: (_, args) => updateBlog(args),
+    addUser: (_, args) => addUser(args),
   },
 };

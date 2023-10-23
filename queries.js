@@ -55,6 +55,7 @@
 //       }
 //     }
 //   }
+// Variables
 // {
 //     "blog": {
 //       "title": "New agen is good",
@@ -76,6 +77,7 @@
 //       avatar
 //     }
 //        }
+// Variables
 //        {
 //         "user": {
 //           "email": "carter@gmail.com",
@@ -85,3 +87,24 @@
 //           "banner": null,
 //         }
 //       }
+
+
+// mutation UpdateBlog($id: ID!, $update: UpdateBlogInput!) {
+//     updateBlog(id: $id, update: $update) {
+//       id
+//       title
+//       desc
+//       category
+//       timestamp
+//       author_id
+//     }
+//   }
+// Variables
+//   {  
+//     "update": {
+//       "title": "GraphQl Updated function",
+//       "desc":"how to add update function to graph QL",
+//       "category": "Programming"
+//     },
+//     "id": "b383c2e5-2c5d-4398-a0e3-4e22e779d198"
+//   }
