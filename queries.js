@@ -108,3 +108,24 @@
 //     },
 //     "id": "b383c2e5-2c5d-4398-a0e3-4e22e779d198"
 //   }
+
+
+// mutation UpdateUser($id: ID!, $updateUser: UpdateUserInput!) {
+//     updateUser(id: $id, update: $updateUser) {
+//       id
+//       email
+//       user_name
+//       bio
+//       avatar
+//       banner
+//       timestamp
+//     }
+//    }
+// Variables
+//    {
+//     "updateUser": {
+//       "user_name": "GoodGuyForReal",
+//       "bio": "I love writing code"
+//     },
+//     "id": "c7859b86-ac22-43a5-9a11-629a32cc7d5a"
+//   }

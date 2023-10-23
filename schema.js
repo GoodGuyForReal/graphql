@@ -33,8 +33,9 @@ type User {
    deleteBlog( id: ID! ): [Blog] 
    deleteUser( id: ID! ): [User] 
    addBlog(blog: AddBlogInput!): Blog
-   updateBlog(id: ID!, update: UpdateBlogInput!): Blog
    addUser(user: AddUserInput!): User
+   updateBlog(id: ID!, update: UpdateBlogInput!): Blog
+   updateUser(id: ID!, update: UpdateUserInput!): User
  }
  
  input AddBlogInput {
@@ -53,6 +54,13 @@ type User {
  input AddUserInput {
     email: String!
     user_name: String!
+    bio: String
+    avatar: String
+    banner: String
+ }
+
+ input UpdateUserInput {
+    user_name: String
     bio: String
     avatar: String
     banner: String
