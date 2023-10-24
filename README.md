@@ -26,6 +26,17 @@ npm start
 ```
 4. Open a web browser and navigate to http://localhost:4000 to access the GraphQL Playground.
 
+## Project Structure
+The project has the following directory structure:
+
+* /actions: Resolver functions
+* /queries.js: Some ready to use queries for apollo server
+* db.js: Mock data.
+* schema.js: GraphQL schema definitions.
+* resolvers.js/: Resolver functions imported from action folder for handling queries and mutations.
+* index.js: The main entry point for the GraphQL server.
+* package.json: Node.js project configuration.
+
 ## Available Queries and Mutations
 Available Queries and Mutations
 
