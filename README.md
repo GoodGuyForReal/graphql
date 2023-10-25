@@ -1,6 +1,6 @@
 # Local GraphQL Server with Mock Data
 
-This project is a local GraphQL server that provides a set of mock data and CRUD (Create, Read, Update, Delete) functionality for two tables: "users" and "blogs." It's designed to help you get started with GraphQL development and allows you to experiment with queries in Apollo Server.
+This project is a local GraphQL server that provides a set of mock data and CRUD (Create, Read, Update, Delete) functionality for two tables: "users" and "blogs." It's designed to help you get started with GraphQL development and allows you to experiment with queries in Apollo Client.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ npm start
 The project has the following directory structure:
 
 * /actions: Resolver functions
-* /queries.js: Some ready to use queries for apollo server
+* /queries.js: Some ready to use queries for apollo client
 * db.js: Mock data.
 * schema.js: GraphQL schema definitions.
 * resolvers.js/: Resolver functions imported from action folder for handling queries and mutations.
