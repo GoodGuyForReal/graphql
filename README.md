@@ -56,5 +56,5 @@ Mutations:
 * updateBlog(id: ID!, update: UpdateBlogInput!): Blog === Update an existing blog.
 
 ## License
-This repo is cretaed under the [MIT License](https://opensource.org/licenses/MIT). Please review the license terms and conditions before using our software.
+This repo is cretaed under the [MIT License](https://opensource.org/licenses/MIT).
 
